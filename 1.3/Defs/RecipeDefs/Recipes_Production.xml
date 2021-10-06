@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef>
+		<defName>Make_ChemfuelFromSmokeleaf</defName>
+		<label>make chemfuel from smokeleaf</label>
+		<description>Make a batch of chemfuel by extracting and condensing oils from smokeleaf.</description>
+		<jobString>Refining chemfuel from wood.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>1969</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>70</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafLeaves</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Chemfuel>42</Chemfuel>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_HHempCloth</defName>
+		<label>make hempen cloth</label>
+		<description>Combine and weave the fibers of smokeleaf to make cloth.</description>
+		<jobString>Making hempen cloth.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>690</workAmount>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<targetCountAdjustment>42</targetCountAdjustment>
+		<recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Smokeleaf</li>
+					</thingDefs>
+				</filter>
+				<count>42</count>
+			</li>
+		</ingredients>
+		<products>
+			<HempCloth>42</HempCloth>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+</Defs>

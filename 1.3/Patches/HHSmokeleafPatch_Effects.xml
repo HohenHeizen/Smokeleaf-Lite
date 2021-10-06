@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="SmokeleafJoint"]/ingestible/outcomeDoers/li[@Class="IngestionOutcomeDoer_GiveHediff"][hediffDef="SmokeleafHigh"]</xpath>
+		<value>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>SmokeleafHigh</hediffDef>
+				<severity>0.25</severity>
+				<toleranceChemical>Smokeleaf</toleranceChemical>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="SmokeleafJoint"]/ingestible/outcomeDoers/li[@Class="IngestionOutcomeDoer_GiveHediff"][hediffDef="SmokeleafTolerance"]</xpath>
+		<value>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>SmokeleafTolerance</hediffDef>
+				<severity>0.020</severity>
+				<divideByBodySize>true</divideByBodySize>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="SmokeleafJoint"]/comps/li[@Class="CompProperties_Drug"]</xpath>
+		<value>
+			<li Class="CompProperties_Drug">
+				<chemical>Smokeleaf</chemical>
+				<addictiveness>0.005</addictiveness>
+				<minToleranceToAddict>0.20</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.01</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>20</listOrder>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName="SmokeleafHigh"]/stages</xpath>
+		<value>
+			<stages>
+				<li>
+					<label>buzzed</label>
+					<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
+					<painOffset>-0.10</painOffset>
+					<statOffsets>
+						<ResearchSpeed>.05</ResearchSpeed>
+					</statOffsets>
+					<capMods>
+						<li>
+							<capacity>Moving</capacity>
+							<offset>-0.05</offset>
+						</li>
+					</capMods>
+				</li>
+				<li>
+					<minSeverity>0.4</minSeverity>
+					<label>high</label>
+					<hungerRateFactorOffset>0.2</hungerRateFactorOffset>
+					<painOffset>-0.20</painOffset>
+					<statOffsets>
+						<ResearchSpeed>0.1</ResearchSpeed>
+					</statOffsets>
+					<capMods>
+						<li>
+							<capacity>Consciousness</capacity>
+							<offset>-0.1</offset>
+						</li>
+						<li>
+							<capacity>Moving</capacity>
+							<offset>-0.1</offset>
+						</li>
+					</capMods>
+				</li>
+				<li>
+					<minSeverity>0.6</minSeverity>
+					<label>stoned</label>
+					<hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+					<painOffset>-0.25</painOffset>
+					<statOffsets>
+						<ResearchSpeed>-0.05</ResearchSpeed>
+					</statOffsets>
+					<capMods>
+						<li>
+							<capacity>Consciousness</capacity>
+							<offset>-0.20</offset>
+						</li>
+						<li>
+							<capacity>Moving</capacity>
+							<offset>-0.10</offset>
+						</li>
+					</capMods>
+				</li>
+			</stages>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThoughtDef[defName="SmokeleafHigh"]/stages</xpath>
+		<value>
+			<stages>
+				<li>
+					<label>smokeleaf buzz</label>
+					<description>Feeling relaxed after a puff. This is nice.</description>
+					<baseMoodEffect>10</baseMoodEffect>
+				</li>
+				<li>
+					<label>smokeleaf high</label>
+					<description>Whoa, I'm stoned.  I guess it's not that bad here.</description>
+					<baseMoodEffect>14</baseMoodEffect>
+				</li>
+				<li>
+					<label>stoned</label>
+					<description>Woo! I'm high as a kite. Time to just sit back.</description>
+					<baseMoodEffect>20</baseMoodEffect>
+				</li>
+			</stages>
+		</value>
+	</Operation>
+	<!--Just because you have weak lungs doesn't mean a cough is asthma-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName="SmokeleafTolerance"]/hediffGivers/li[@Class="HediffGiver_RandomDrugEffect"][hediff="Asthma"]</xpath>
+		<value>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Pneumonitis</hediff>
+				<severityToMtbDaysCurve>
+					<points>
+						<li>(0.1, 99999)</li>
+						<li>(0.3, 360)</li>
+						<li>(.5, 270)</li>
+					</points>
+				</severityToMtbDaysCurve>
+				<partsToAffect>
+					<li>Lung</li>
+				</partsToAffect>
+				<countToAffect>2</countToAffect>
+			</li>
+		</value>
+	</Operation>
+	<!--No actual linkage between Smokeleaf & Carcinoma. Smoking anything is still bad for you-->
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/HediffDef[defName="SmokeleafTolerance"]/hediffGivers/li[@Class="HediffGiver_RandomDrugEffect"][hediff="Carcinoma"]</xpath>
+	</Operation>
+	<!--Smokeleaf addiction isn't chemical but a mindset first day is the worst-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName="SmokeleafAddiction"]/comps/li[@Class="HediffCompProperties_SeverityPerDay"]</xpath>
+		<value>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.3333</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName="SmokeleafAddiction"]/stages/li[label="withdrawal"]/capMods</xpath>
+		<value>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<offset>-0.05</offset>
+				</li>
+				<li>
+					<capacity>Moving</capacity>
+					<offset>-0.05</offset>
+				</li>
+			</capMods>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThoughtDef[defName="SmokeleafWithdrawal"]/stages/li[label="smokeleaf withdrawal"]/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>-10</baseMoodEffect>
+		</value>
+	</Operation>
+	
+	
+</Patch>

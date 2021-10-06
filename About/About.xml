@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>[HH] Smokeleaf Lite</name>
+	<author>HohenHeizen</author>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	<packageId>HH.Smokeleaf.Lite</packageId>
+	<description>
+	<![CDATA[  
+Small mod aimed at changing smokeleaf to be less deadly, without making it insulting, while also adding a small production chain.
+---
+<b>Contains:</b>
+    • Changes to the effects of smokeleaf
+  <u>New Recipes:</u>
+	• Make Hempen Cloth 
+		<i>Requires: Crafting Spot, Tailoring Bench, Electric Taloring Bench</i>	
+	• Make Chemfuel from Smokeleaf  
+		<i>Requires: Biofuel rifinery</i>	
+	• Make Herbal Medicine from Smokeleaf 
+		<i>Requires: Crafting Spot, Drug Lab (no research currently)</i>
+	• Make Hash from Smokeleaf (toggable with VFE)
+		<i>Requires: Drug Lab, Drug Research</i>
+Version <color=#FFD800>0.1.0</color>]]></description>
+	<!-->
+  <u>New Recipes:</u>
+	• Make Hempen Cloth <i>Requires: Crafting Spot, Tailoring Bench, Electric Taloring Bench</i>
+		-More durable, more sustainable, less comfortable
+		<i>Slightly better overall stats at the cost of beauty.</i>
+	• Make Chemfuel from Smokeleaf  <i>Requires: Biofuel rifinery</i>
+		-Proposed fuel alternative
+		<i>Slightly less work for more yield.
+		   Removed Smokeleaf from being able to used for Organic Fuel</i>
+	• Make Herbal Medicine from Smokeleaf <i>Requires: Crafting Spot, Drug Lab</i>
+		<i>Use</i></!-->
+</ModMetaData>
