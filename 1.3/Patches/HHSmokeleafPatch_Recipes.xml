@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/RecipeDef[defName="Make_ChemfuelFromOrganics"]//filter[1]/disallowedThingDefs[1]
+		<xpath>/Defs/RecipeDef[defName="Make_ChemfuelFromOrganics"]/ingredients/li/filter/disallowedThingDefs
 	</xpath>
 		<value>
 			<li>SmokeleafLeaves</li>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="Make_ChemfuelFromOrganics"]/fixedIngredientFilter/disallowedThingDefs
+	</xpath>
+		<value>
+			<li>SmokeleafLeaves</li>
+		</value>
+	</Operation>	
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName="MedicineHerbal"]
 	</xpath>

@@ -5,8 +5,8 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>HempCloth</defName>
-    <label>hempen loth</label>
-    <description>Hemp cloth woven from organic fibers found in smokeleaf.</description>
+    <label>hempen cloth</label>
+    <description>Hemp fabric woven from organic fibers found in smokeleaf.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Cloth</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -14,14 +14,14 @@
     </graphicData>
     <statBases>
       <StuffPower_Armor_Sharp>0.48</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.1</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat>
+      <StuffPower_Armor_Blunt>0.15</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>22</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
       <MaxHitPoints>120</MaxHitPoints>
       <MarketValue>2</MarketValue>
       <Mass>0.026</Mass>
-      <Flammability>.9</Flammability>
+      <Flammability>0.7</Flammability>
       <DeteriorationRate>3</DeteriorationRate>
     </statBases>
     <burnableByRecipe>true</burnableByRecipe>
@@ -29,7 +29,8 @@
     <minRewardCount>30</minRewardCount>
     <stuffProps>
       <statFactors>
-        <Flammability>1.2</Flammability>
+        <MaxHitPoints>1.2</MaxHitPoints>
+        <Flammability>0.7</Flammability>
         <Beauty>0</Beauty>
       </statFactors>
       <categories>

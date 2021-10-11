@@ -27,12 +27,16 @@
 		<products>
 			<Chemfuel>42</Chemfuel>
 		</products>
+       <researchPrerequisite>SmokeleafRefining</researchPrerequisite>
+		<recipeUsers>
+			<li>BiofuelRefinery</li>
+		</recipeUsers>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>Make_HHempCloth</defName>
 		<label>make hempen cloth</label>
-		<description>Combine and weave the fibers of smokeleaf to make cloth.</description>
+		<description>Combine and weave the fibers of smokeleaf to make fabric.</description>
 		<jobString>Making hempen cloth.</jobString>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Tailor</effectWorking>
@@ -49,7 +53,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Smokeleaf</li>
+						<li>SmokeleafLeaves</li>
 					</thingDefs>
 				</filter>
 				<count>42</count>
