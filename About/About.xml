@@ -8,29 +8,30 @@
 	<packageId>HH.Smokeleaf.Lite</packageId>
 	<description>
 	<![CDATA[  
-Small mod aimed at changing smokeleaf to be less deadly, without making it insulting, while also adding a small production chain.
+A mod aimed at changing smokeleaf to be less deadly, and less stereotypical, while also adding a small production chain.
 ---
 <b>Contains:</b>
-    • Changes to the effects of smokeleaf
-  <u>New Recipes:</u>
-	• Make Hempen Cloth 
-		<i>Requires: Crafting Spot, Tailoring Bench, Electric Taloring Bench</i>	
-	• Make Chemfuel from Smokeleaf  
-		<i>Requires: Biofuel rifinery</i>	
-	• Make Herbal Medicine from Smokeleaf 
-		<i>Requires: Crafting Spot, Drug Lab (no research currently)</i>
-	• Make Hash from Smokeleaf (toggable with VFE)
-		<i>Requires: Drug Lab, Drug Research</i>
-Version <color=#FFD800>0.1.0</color>]]></description>
-	<!-->
-  <u>New Recipes:</u>
-	• Make Hempen Cloth <i>Requires: Crafting Spot, Tailoring Bench, Electric Taloring Bench</i>
-		-More durable, more sustainable, less comfortable
-		<i>Slightly better overall stats at the cost of beauty.</i>
-	• Make Chemfuel from Smokeleaf  <i>Requires: Biofuel rifinery</i>
-		-Proposed fuel alternative
-		<i>Slightly less work for more yield.
-		   Removed Smokeleaf from being able to used for Organic Fuel</i>
-	• Make Herbal Medicine from Smokeleaf <i>Requires: Crafting Spot, Drug Lab</i>
-		<i>Use</i></!-->
+  <b>Smokeleaf Changes:</b>
+   • Getting high now effects Talking, Manipulation, and Moving instead of Conciousness
+   • The High Effect now had 3 Stages. (buzzed, high, stoned)
+  <b>New Hediff:</b>
+   • Pneumonitis: <i>(inflamamtion of lungs)</i>
+      <i>Replaces Asthma as primary effect</i>
+      <i>Asthma replaces Carcinoma</i>
+  <b>New Recipes:</b>
+   • Make Hempen Cloth 
+      <i>Requires: Crafting Spot, Tailoring Bench, Electric Taloring Bench</i>	
+   • Make Herbal Medicine from Smokeleaf
+      <i>Requires: Crafting Spot, Drug Lab (no research required)</i>
+      <i>Recipe: 4xSmokeleaf leaves, 3xCloth </i>
+   • Make Hash from Smokeleaf 
+      <i>Requires: Drug Lab (smokeleaf refining)</i>
+      <i>Recipe: 42xSmokeleaf leaves</i>
+   • Make Chemfuel from Smokeleaf  
+      <i>Requires: Biofuel rifinery (smokeleaf refining)</i>
+      <i>Recipe: 70 xmokeleaf Leaves (removed smokeleaf from organics fuel)</i>	
+  <b>New Research:</b>
+      <i>Smokeleaf Refining</i>
+      <i>Requires: 400 Research</i>
+Version <color=#FFD800>1.0.0</color>]]></description>
 </ModMetaData>

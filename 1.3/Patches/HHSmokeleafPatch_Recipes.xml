@@ -2,21 +2,21 @@
 <Patch>
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/RecipeDef[defName="Make_ChemfuelFromOrganics"]/ingredients/li/filter/disallowedThingDefs
-	</xpath>
+		</xpath>
 		<value>
 			<li>SmokeleafLeaves</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/RecipeDef[defName="Make_ChemfuelFromOrganics"]/fixedIngredientFilter/disallowedThingDefs
-	</xpath>
+		</xpath>
 		<value>
 			<li>SmokeleafLeaves</li>
 		</value>
-	</Operation>	
+	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName="MedicineHerbal"]
-	</xpath>
+		</xpath>
 		<value>
 			<recipeMaker>
 				<workSpeedStat>DrugCookingSpeed</workSpeedStat>
@@ -24,8 +24,6 @@
 					<li>CraftingSpot</li>
 					<li>DrugLab</li>
 				</recipeUsers>
-				<!--Unsure on this-->
-				<!--<researchPrerequisite>MedicineProduction</researchPrerequisite>-->
 				<skillRequirements>
 					<Crafting>4</Crafting>
 					<Intellectual>4</Intellectual>

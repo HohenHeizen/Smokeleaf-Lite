@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+  <!--Hashish-->
   <ThingDef ParentName="MakeableDrugBase">
     <defName>HHHash</defName>
     <label>hash</label>
@@ -8,7 +8,7 @@
     <descriptionHyperlinks>
       <HediffDef>SmokeleafHigh</HediffDef>
       <HediffDef>SmokeleafTolerance</HediffDef>
-      <HediffDef>SmokeleafAddiction</HediffDef>	
+      <HediffDef>SmokeleafAddiction</HediffDef>
       <HediffDef>Pneumonitis</HediffDef>
       <HediffDef>Asthma</HediffDef>
     </descriptionHyperlinks>
@@ -74,7 +74,7 @@
       </outcomeDoers>
     </ingestible>
     <recipeMaker>
-        <researchPrerequisite>SmokeleafRefining</researchPrerequisite>
+      <researchPrerequisite>SmokeleafRefining</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
       </recipeUsers>
@@ -96,7 +96,4 @@
     </comps>
     <allowedArchonexusCount>50</allowedArchonexusCount>
   </ThingDef>
-
-
-  
 </Defs>

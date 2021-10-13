@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 	<Operation Class="PatchOperationReplace">
-<xpath>/Defs/ThingDef[defName="SmokeleafJoint"]/descriptionHyperlinks</xpath>
-<value>
-	<descriptionHyperlinks>
-	<HediffDef>SmokeleafHigh</HediffDef>
-	<HediffDef>SmokeleafTolerance</HediffDef>
-	<HediffDef>SmokeleafAddiction</HediffDef>
-	<HediffDef>Pneumonitis</HediffDef>
-	<HediffDef>Asthma</HediffDef>
-</descriptionHyperlinks>
-</value>
+		<xpath>/Defs/ThingDef[defName="SmokeleafJoint"]/descriptionHyperlinks</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<HediffDef>SmokeleafHigh</HediffDef>
+				<HediffDef>SmokeleafTolerance</HediffDef>
+				<HediffDef>SmokeleafAddiction</HediffDef>
+				<HediffDef>Pneumonitis</HediffDef>
+				<HediffDef>Asthma</HediffDef>
+			</descriptionHyperlinks>
+		</value>
 	</Operation>
 	<!--How high you get-->
 	<Operation Class="PatchOperationReplace">
@@ -56,7 +56,7 @@
 				<li>
 					<label>buzzed</label>
 					<painOffset>-0.10</painOffset>
-
+					<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
 					<capMods>
 						<li>
 							<capacity>Talking</capacity>
@@ -80,7 +80,7 @@
 					<minSeverity>0.45</minSeverity>
 					<label>high</label>
 					<painOffset>-0.20</painOffset>
-
+					<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
 					<capMods>
 						<li>
 							<capacity>Talking</capacity>
@@ -88,7 +88,7 @@
 						</li>
 						<li>
 							<capacity>Manipulation</capacity>
-							<offset>-0.15</offset>
+							<offset>-0.05</offset>
 						</li>
 
 						<li>
@@ -104,7 +104,7 @@
 				<li>
 					<minSeverity>0.6</minSeverity>
 					<label>stoned</label>
-					<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
+					<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
 					<painOffset>-0.30</painOffset>
 					<capMods>
 						<li>
@@ -113,7 +113,7 @@
 						</li>
 						<li>
 							<capacity>Manipulation</capacity>
-							<offset>-0.25</offset>
+							<offset>-0.15</offset>
 						</li>
 
 						<li>
@@ -134,17 +134,17 @@
 		<value>
 			<stages>
 				<li>
-					<label>smokeleaf buzz</label>
+					<label>buzzed on smokeleaf</label>
 					<description>Feeling relaxed after a puff. This is nice.</description>
 					<baseMoodEffect>10</baseMoodEffect>
 				</li>
 				<li>
-					<label>smokeleaf high</label>
+					<label>high on smokeleaf</label>
 					<description>Woo! I'm high as a kite.</description>
 					<baseMoodEffect>14</baseMoodEffect>
 				</li>
 				<li>
-					<label>stoned</label>
+					<label>stoned on smokeleaf</label>
 					<description>Whoa, I'm stoned. Time to just sit back.</description>
 					<baseMoodEffect>20</baseMoodEffect>
 				</li>
@@ -158,23 +158,24 @@
 			<li Class="HediffGiver_RandomDrugEffect">
 				<hediff>Asthma</hediff>
 				<severityToMtbDaysCurve>
-				  <points>
-					<li>(0.1, 99999)</li>
-					<li>(0.3, 720)</li>
-					<li>(.5, 270)</li>
-				  </points>
+					<points>
+						<li>(0.1, 99999)</li>
+						<li>(0.3, 720)</li>
+						<li>(.5, 270)</li>
+					</points>
 				</severityToMtbDaysCurve>
 				<partsToAffect>
-				  <li>Lung</li>
+					<li>Lung</li>
 				</partsToAffect>
 				<countToAffect>2</countToAffect>
-			  </li>
+			</li>
 		</value>
 	</Operation>
 	<!--No actual linkage between Smokeleaf & Carcinoma. Smoking anything is still bad for you Might give you a sore throat and cough-->
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/HediffDef[defName="SmokeleafTolerance"]/hediffGivers/li[@Class="HediffGiver_RandomDrugEffect"][hediff="Carcinoma"]</xpath>
-		<value><li Class="HediffGiver_RandomDrugEffect">
+		<value>
+			<li Class="HediffGiver_RandomDrugEffect">
 				<hediff>Pneumonitis</hediff>
 				<severityToMtbDaysCurve>
 					<points>
@@ -186,15 +187,16 @@
 				<partsToAffect>
 					<li>Lung</li>
 				</partsToAffect>
-				<countToAffect>2</countToAffect>
-			</li></value>
+				<countToAffect>1</countToAffect>
+			</li>
+		</value>
 	</Operation>
 	<!--Smokeleaf addiction isn't chemical but a mindset first day is the worst-->
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/HediffDef[defName="SmokeleafAddiction"]/comps/li[@Class="HediffCompProperties_SeverityPerDay"]</xpath>
 		<value>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.3333</severityPerDay>
+				<severityPerDay>-0.420</severityPerDay>
 				<showDaysToRecover>true</showDaysToRecover>
 			</li>
 		</value>
@@ -218,7 +220,7 @@
 			</capMods>
 		</value>
 	</Operation>
-	<!--Will come back and Edit this, maybe but I've never binged on coke cause I'm out of pot-->
+	<!--Will come back and Edit this-->
 	<Operation Class="PatchOperationRemove">
 		<xpath>/Defs/HediffDef[defName="SmokeleafAddiction"]/stages/li/mentalStateGivers</xpath>
 	</Operation>
@@ -229,6 +231,4 @@
 			<baseMoodEffect>-15</baseMoodEffect>
 		</value>
 	</Operation>
-
-
 </Patch>

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!--Chemfuel Recipe-->
 	<RecipeDef>
 		<defName>Make_ChemfuelFromSmokeleaf</defName>
 		<label>make chemfuel from smokeleaf</label>
@@ -32,7 +33,7 @@
 			<li>BiofuelRefinery</li>
 		</recipeUsers>
 	</RecipeDef>
-
+	<!--Hemp Cloth Recipe-->
 	<RecipeDef>
 		<defName>Make_HHempCloth</defName>
 		<label>make hempen cloth</label>

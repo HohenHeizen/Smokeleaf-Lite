@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- Pneumonitis -->
 	<HediffDef ParentName="ChronicDiseaseBase">
 		<defName>Pneumonitis</defName>
 		<label>pneumonitis</label>
@@ -8,6 +9,7 @@
 		<minSeverity>0.001</minSeverity>
 		<maxSeverity>0.25</maxSeverity>
 		<tendable>true</tendable>
+		<everCurableByItem>true</everCurableByItem>
 		<cureAllAtOnceIfCuredByItem>true</cureAllAtOnceIfCuredByItem>
 		<comps>
 			<li Class="HediffCompProperties_Immunizable">
