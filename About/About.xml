@@ -10,6 +10,15 @@
 	<![CDATA[  
 A mod aimed at changing smokeleaf to be less deadly, and less stereotypical, while also adding a small production chain.
 ---
+<b>Changelog:</b>
+   <i>v1.4.0</i> -Readjusted numbers.
+   -Changed Hashish description, wooops.
+   <i>v1.3.0</i> -Readded addicton adjusted mental states. Addiction numbers still need tweaking.
+   -Adjusted Hash again. Halved everything but added to items needed. Added a Skill requirement to crafting.
+   -Added an overdose chance to hashish for balancing. (Okay so you can die from smokeleaf again.)
+   <i>v1.2.0</i> -Adjusted Hash Work & Value. Adjusted other recipe costs for cleaner recipe management. 
+   <i>v1.1.0</i> -Removed previous Herbal Medicine recipe, replacing with one that allows most cloth and wools. 
+---
 <b>Contains:</b>
   <b>Smokeleaf Changes:</b>
    • Getting high now effects Talking, Manipulation, and Moving instead of Conciousness
@@ -19,19 +28,19 @@ A mod aimed at changing smokeleaf to be less deadly, and less stereotypical, whi
       <i>Replaces Asthma as primary effect</i>
       <i>Asthma replaces Carcinoma</i>
   <b>New Recipes:</b>
-   • Make Hempen Cloth 
-      <i>Requires: Crafting Spot, Tailoring Bench, Electric Taloring Bench</i>	
+   • Make Hemp Fabric 
+      <i>Requires: Crafting Spot, Tailoring Bench, Electric Tailoring Bench</i>	
    • Make Herbal Medicine from Smokeleaf
       <i>Requires: Crafting Spot, Drug Lab (no research required)</i>
-      <i>Recipe: 4xSmokeleaf leaves, 3xCloth </i>
+      <i>Recipe: 4xSmokeleaf leaves, 3xTextile </i>
    • Make Hash from Smokeleaf 
-      <i>Requires: Drug Lab (smokeleaf refining)</i>
-      <i>Recipe: 42xSmokeleaf leaves</i>
+      <i>Requires: Drug Lab (smokeleaf refining, 8 crafting skill)</i>
+      <i>Recipe: 25xSmokeleaf leaves</i>
    • Make Chemfuel from Smokeleaf  
-      <i>Requires: Biofuel rifinery (smokeleaf refining)</i>
-      <i>Recipe: 70 xmokeleaf Leaves (removed smokeleaf from organics fuel)</i>	
+      <i>Requires: Biofuel refinery (smokeleaf refining)</i>
+      <i>Recipe: 70 Smokeleaf leaves (removed smokeleaf from organics fuel)</i>	
   <b>New Research:</b>
       <i>Smokeleaf Refining</i>
       <i>Requires: 400 Research</i>
-Version <color=#FFD800>1.0.0</color>]]></description>
+Version <color=#FFD800>1.2.0</color>]]></description>
 </ModMetaData>

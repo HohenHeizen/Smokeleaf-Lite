@@ -5,7 +5,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>HempCloth</defName>
-    <label>hempen cloth</label>
+    <label>hemp fabric</label>
     <description>Hemp fabric woven from organic fibers found in smokeleaf.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Cloth</texPath>

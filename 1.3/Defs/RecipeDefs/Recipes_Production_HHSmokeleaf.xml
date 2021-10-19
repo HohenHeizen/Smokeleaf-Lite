@@ -28,7 +28,7 @@
 		<products>
 			<Chemfuel>42</Chemfuel>
 		</products>
-       <researchPrerequisite>SmokeleafRefining</researchPrerequisite>
+		<researchPrerequisite>SmokeleafRefining</researchPrerequisite>
 		<recipeUsers>
 			<li>BiofuelRefinery</li>
 		</recipeUsers>
@@ -36,15 +36,14 @@
 	<!--Hemp Cloth Recipe-->
 	<RecipeDef>
 		<defName>Make_HHempCloth</defName>
-		<label>make hempen cloth</label>
+		<label>weave hempen fabric</label>
 		<description>Combine and weave the fibers of smokeleaf to make fabric.</description>
-		<jobString>Making hempen cloth.</jobString>
+		<jobString>Weaving hempen fabric.</jobString>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
-		<workAmount>690</workAmount>
+		<workAmount>420</workAmount>
 		<allowMixingIngredients>false</allowMixingIngredients>
-		<targetCountAdjustment>42</targetCountAdjustment>
 		<recipeUsers>
 			<li>ElectricTailoringBench</li>
 			<li>HandTailoringBench</li>
@@ -57,11 +56,64 @@
 						<li>SmokeleafLeaves</li>
 					</thingDefs>
 				</filter>
-				<count>42</count>
+				<count>25</count>
 			</li>
 		</ingredients>
 		<products>
-			<HempCloth>42</HempCloth>
+			<HempCloth>20</HempCloth>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Make_HerbalMedicine_HH</defName>
+		<label>make herbal medicine</label>
+		<description>Making herbal medicine from smokeleaf leaves.</description>
+		<jobString>Making herbal medicine.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<effectWorking>Research</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>420</workAmount>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Textiles</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Textiles</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Hyperweave</li>
+				<li>Synthread</li>
+			</disallowedThingDefs>
+			<disallowedCategories>
+				<li>Leathers</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<MedicineHerbal>1</MedicineHerbal>
 		</products>
 		<workSkill>Crafting</workSkill>
 	</RecipeDef>

@@ -4,7 +4,7 @@
   <ThingDef ParentName="MakeableDrugBase">
     <defName>HHHash</defName>
     <label>hash</label>
-    <description>Smokeleaf leaves prepared in small rolls for smoking. The drug improves mood, but also increases appetite, reduces focus and slows movement. Smokeleaf use can produce a dependency.\n\nJoints can be produced at a crafting spot without equipment, and are a fixture in many traditional low-industriousness cultures.</description>
+    <description>Typically used in smoking hashish is a concentrate smokeleaf product formed of extracted resin pressed into form. The drug improves mood but can also severely reduce focus and movement.\n\nHashish can be produced in a drug lab with equipment, although different varieties have been used in many traditional low-industrious cultures. Valueable in trade.</description>
     <descriptionHyperlinks>
       <HediffDef>SmokeleafHigh</HediffDef>
       <HediffDef>SmokeleafTolerance</HediffDef>
@@ -18,18 +18,18 @@
     </graphicData>
     <rotatable>false</rotatable>
     <statBases>
-      <WorkToMake>2000</WorkToMake>
-      <MarketValue>990</MarketValue>
+      <WorkToMake>2500</WorkToMake>
+      <MarketValue>75</MarketValue>
       <Mass>1.05</Mass>
-      <DeteriorationRate>3</DeteriorationRate>
+      <DeteriorationRate>.2</DeteriorationRate>
       <Flammability>.75</Flammability>
     </statBases>
     <techLevel>Medieval</techLevel>
     <ingestible>
       <foodType>Plant, Processed</foodType>
       <joyKind>Chemical</joyKind>
-      <joy>1.6</joy>
-      <baseIngestTicks>720</baseIngestTicks>
+      <joy>1.4</joy>
+      <baseIngestTicks>1420</baseIngestTicks>
       <nurseable>true</nurseable>
       <drugCategory>Social</drugCategory>
       <ingestSound>Ingest_Smoke</ingestSound>
@@ -78,22 +78,27 @@
       <recipeUsers>
         <li>DrugLab</li>
       </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
       <workSpeedStat>DrugCookingSpeed</workSpeedStat>
       <workSkill>Cooking</workSkill>
     </recipeMaker>
     <costList>
-      <SmokeleafLeaves>42</SmokeleafLeaves>
+      <SmokeleafLeaves>26</SmokeleafLeaves>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
         <chemical>Smokeleaf</chemical>
-        <addictiveness>0.020</addictiveness>
+        <addictiveness>0.030</addictiveness>
         <minToleranceToAddict>0.75</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
         <needLevelOffset>0.9</needLevelOffset>
         <listOrder>20</listOrder>
+        <overdoseSeverityOffset>0.1~0.3</overdoseSeverityOffset>
+        <largeOverdoseChance>0.01</largeOverdoseChance>
       </li>
     </comps>
-    <allowedArchonexusCount>50</allowedArchonexusCount>
+    <allowedArchonexusCount>20</allowedArchonexusCount>
   </ThingDef>
 </Defs>

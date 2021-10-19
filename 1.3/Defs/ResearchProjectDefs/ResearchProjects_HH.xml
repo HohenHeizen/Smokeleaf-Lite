@@ -4,7 +4,7 @@
     <ResearchProjectDef>
         <defName>SmokeleafRefining</defName>
         <label>smokeleaf refining</label>
-        <description>Refine smokeleaf leaves into hash and chemfuel.</description>
+        <description>Refine smokeleaf leaves into hash and chemfuel, alternate uses for the naturally growing plant.</description>
         <baseCost>400</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>

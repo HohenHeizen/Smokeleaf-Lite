@@ -14,26 +14,5 @@
 			<li>SmokeleafLeaves</li>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName="MedicineHerbal"]
-		</xpath>
-		<value>
-			<recipeMaker>
-				<workSpeedStat>DrugCookingSpeed</workSpeedStat>
-				<recipeUsers>
-					<li>CraftingSpot</li>
-					<li>DrugLab</li>
-				</recipeUsers>
-				<skillRequirements>
-					<Crafting>4</Crafting>
-					<Intellectual>4</Intellectual>
-				</skillRequirements>
-				<workSkill>Intellectual</workSkill>
-			</recipeMaker>
-			<costList>
-				<SmokeleafLeaves>4</SmokeleafLeaves>
-				<Cloth>3</Cloth>
-			</costList>
-		</value>
-	</Operation>
+
 </Patch>
