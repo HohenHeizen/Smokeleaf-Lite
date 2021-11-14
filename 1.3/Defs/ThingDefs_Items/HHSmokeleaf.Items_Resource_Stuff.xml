@@ -10,7 +10,7 @@
     <graphicData>
       <texPath>Things/Item/Resource/Cloth</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-      <color>(142,157,142)</color>
+      <color>(140,120,60)</color>
     </graphicData>
     <statBases>
       <StuffPower_Armor_Sharp>0.48</StuffPower_Armor_Sharp>
@@ -36,9 +36,8 @@
       <categories>
         <li>Fabric</li>
       </categories>
-       <color>(142,157,142)</color>
-      <commonality>.9</commonality>
-      <allowColorGenerators>true</allowColorGenerators>
+      <color>(140,120,60)</color>
+      <commonality>.5</commonality>
       <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
     </stuffProps>
     <thingCategories>

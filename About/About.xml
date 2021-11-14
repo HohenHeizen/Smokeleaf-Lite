@@ -11,6 +11,9 @@
 A mod aimed at changing smokeleaf to be less deadly, and less stereotypical, while also adding a small production chain.
 ---
 <b>Changelog:</b>
+   <i>v1.4.5</i> -Hemp Cloth recipes now make Cloth
+   -Herbal medicine now requires Cloth instead of Textiles
+   -Bulk Recipes
    <i>v1.4.0</i> -Readjusted numbers.
    -Changed Hashish description, wooops.
    <i>v1.3.0</i> -Readded addicton adjusted mental states. Addiction numbers still need tweaking.
@@ -28,11 +31,11 @@ A mod aimed at changing smokeleaf to be less deadly, and less stereotypical, whi
       <i>Replaces Asthma as primary effect</i>
       <i>Asthma replaces Carcinoma</i>
   <b>New Recipes:</b>
-   • Make Hemp Fabric 
+   • Make Hempen Fabric 
       <i>Requires: Crafting Spot, Tailoring Bench, Electric Tailoring Bench</i>	
    • Make Herbal Medicine from Smokeleaf
       <i>Requires: Crafting Spot, Drug Lab (no research required)</i>
-      <i>Recipe: 4xSmokeleaf leaves, 3xTextile </i>
+      <i>Recipe: 4xSmokeleaf leaves, 3xCloth </i>
    • Make Hash from Smokeleaf 
       <i>Requires: Drug Lab (smokeleaf refining, 8 crafting skill)</i>
       <i>Recipe: 25xSmokeleaf leaves</i>
